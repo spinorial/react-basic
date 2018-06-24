@@ -1,0 +1,19 @@
+$footer-height: 100px;
+$header-height: 300px;
+
+
+.app-footer {
+	position:fixed;
+	height:$header-height;
+	background-color: red;
+    top: 0px;
+}
+
+.app-footer {
+	position:fixed;
+	background-color: red;
+    top: calc( 100vh - $footer-height);
+}
+
+
+
