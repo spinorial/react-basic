@@ -1,0 +1,61 @@
+Reducers
+
+-----------------------
+
+
+A reducer is a pure function which takes in a state and an action and then returns a new state.
+
+By pure function, we refer to a function whose output is only dependant on the input. It cannot rely on for example global variables.
+
+const reducer = (state,action)=>{
+	return state;
+}
+
+Above is the most simple form of a reducer it simply returns the state.
+
+The state in the reducer is not mutated, in each case we do not update the state and return a new object.
+
+
+-------------------------
+
+Actions
+
+-------------------------
+
+
+Actions are objects which get used by the reducer to tell it what to do to produce a new state. In the most simple form actions require you to have one single property which is a type.
+
+
+const action = {
+	type: 'SOME_TYPE_DATA'
+}
+
+
+By convention this type data is written in capitals.
+
+Actions can also contain other data which may be used by the reducer.
+
+const action = {
+	type: 'SOME_TYPE_DATA',
+	data: ['array','of','data','whatever','you','want']
+}
+
+
+A common convention is just have the data as object.
+
+const action = {
+	
+	type: 'SOME_TYPE_DATA',
+	payload: {}
+
+}
+
+-----------------------------
+
+Combining Actions and Reducers
+
+----------------------------
+
+
+
+

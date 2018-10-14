@@ -1,5 +1,5 @@
 $footer-height: 100px;
-$header-height: 300px;
+$header-height: 160px;
 
 
 .app-footer {
@@ -13,6 +13,40 @@ $header-height: 300px;
 	position:fixed;
 	background-color: red;
     top: calc( 100vh - $footer-height);
+}
+
+.app-header{
+// position:fixed;
+	// background-color: red;
+	height:$header-height;
+	width:100%;
+    top:0;
+    margin-bottom:20px;
+    padding-right:20px;
+}
+
+
+.btn-pad{
+	// height:200px;
+	min-width:50px;
+	margin:3px;
+}
+.table-div{
+	margin-top:10px;
+	// border:solid 1px red;
+}
+
+.guidelines-table{
+	background-color: yellow;
+}
+
+.select-bar{
+	padding-top: $header-height;
+	z-index: -10;
+}
+
+.table-div{
+	z-index: -150;
 }
 
 
